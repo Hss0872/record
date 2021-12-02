@@ -1,5 +1,5 @@
-# Today I Learned
-- 공부한 내용을 기록한다.
+# 개발 공책
+- 공부한 내용 기록
 
 # 분류
 ## markdown
