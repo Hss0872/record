@@ -11,4 +11,4 @@
 - [markdown 기본 문법](https://github.com/Hss0872/record/blob/master/markdown/how_to_write_markdown.md)
 ## html_css
 - [html 기본 문법](https://github.com/Hss0872/record/blob/master/html_css/html.md)
-- [css 기본](https://github.com/Hss0872/record/blob/master/html_css/css.md)
+- [css 기본 문법](https://github.com/Hss0872/record/blob/master/html_css/css.md)
