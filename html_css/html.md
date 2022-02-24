@@ -1,5 +1,6 @@
 ## html 문법
 - - -
+
 ```<h1>``` : 제목 크기
 
 ```<p>``` : 하나의 text 단락으로 본다. 끝나고 줄바꿈 해준다.
@@ -17,6 +18,8 @@
 ```<ol>``` : ordered list -> 순서가 있는 목록이다. 만약 abcd를 넣고 싶다면 type="a"를 추가하면 된다.
 
 ```<ul>``` : 순서가 없는 목록이다.
+
+- div와 span의 차이점 : div는 display 속성이 block이지만 span은 inline이다.
 
 #### 표 만들기
 
@@ -81,6 +84,7 @@
 - required : 필수 필드
 - readonly : 텍스트 필드를 지우지 못하게 고정
 - autofocus : 해당 화면으로 이동 시 자동으로 커서 이동
+- placeholder : text 힌트 내용
 
 #### 셀렉트 메뉴 만들기
 
