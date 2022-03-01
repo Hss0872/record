@@ -57,7 +57,27 @@ var_dump(isset($a, $b)); //FALSE
 - php document에 있는 함수들을 보면 대강 짐작할 수 있다.
 - 매개변수 안에 []는 안써도 되지만 []가 없다면 반드시 사용해야 하는 매개변수이다.
 
-- scandir() : 해당 디렉토리 안에 있는 파일 이름을 array로 반환
+### 다양한 함수들
+
+- scandir() : 해당 디렉토리 안에 있는 파일 이름을 array로 반환( 현재 디렉토리와 하위 디렉토리인 . , ..도 있으므로 잘 거를 것)
 - ex) ``` $files1 = scandir('/tmp') ```
 - " " 안에 $가 들어갔을 때 $뒤에 있는 이름은 변수로 친다.
 - ex) ``` echo "<li><a href=\"index.php?id=$list[$i]\">$list[$i]</></li>\n"; ```
+- file_get_contents($Path)) : 해당 경로에 있는 파일의 정보를 가져온다.
+- file_put_contents($Path, $img) : 해당 경로에 파일을 저장한다. 만약 경로에 파일이 없다면 파일을 만들어서 추가한다.
+- filemtime($Path) : 파일을 저장한 날짜를 가져온다.
+- unlink($Path) : 해당 경로의 파일을 제거한다.
+
+### 웹 관련 기능
+- form에서 원하는 값을 넘기고 싶다면 hidden을 사용하자
+- header('Location: $Path') : 해당 경로로 리다이렉트 
+- 태그 중간에 값만 넣을 경우 ``` <?php echo $_GET['id'];?>``` 로 작성해도 되지만 ```<?=$_GET['id']>``` 를 사용하면 더 편리하다.
+- php는 한번 만들어진 함수는 재정의할 수 없다.
+- require($Path) : 라이브러리를 땡겨올 때 require 안에 php파일 경로를 넣으면 된다.
+- require_once($Path) : _once를 사용하면 이전에 이미 한번 require 했다면 무시한다. 중복해서 호출되는 것을 방지할 수 있다.
+
+### 보안 XSS (Cross Site Scripting)
+- ```htmlspecialchars('<script>')``` : 스크립트 태그를 사용하지 못하도록 안의 특수문자를 HTML 엔티티로 바꿔준다. 그래서 js는 동작하지 않는다. 사용자가 작성할 수 있는 모든 부분에 사용해주자(이미지, 줄바꿈등 몇몇 특수한 것들을 사용할 수 없을 수 있다.)
+
+### 보안 파일 경로 보호
+- basename($Path) : 파일의 경로에서 파일명만 추출해주는 함수이다.
