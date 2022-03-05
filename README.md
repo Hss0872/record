@@ -12,3 +12,5 @@
 ## html_css
 - [html 기본 문법](https://github.com/Hss0872/record/blob/master/html_css/html.md)
 - [css 기본 문법](https://github.com/Hss0872/record/blob/master/html_css/css.md)
+## linux
+- [linux 기본 명령어](https://github.com/Hss0872/record/blob/master/Linux/Linux.md)
