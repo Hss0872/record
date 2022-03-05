@@ -81,3 +81,17 @@ var_dump(isset($a, $b)); //FALSE
 
 ### 보안 파일 경로 보호
 - basename($Path) : 파일의 경로에서 파일명만 추출해주는 함수이다.
+
+### mysql 문법
+- $conn = mysqli_connect($host, $username, $pw, $schema) : db와 연결하는 함수
+- $host : database 서버의 주소(mysql 서버가 설치된 컴퓨터의 ip주소), $username : mysql username, $pw : password, $schema : database 이름
+- mysqli_query($conn,$sql_query) : 쿼리문 실행 함수 (만약 실패했을 시 리턴값 false)
+- ``` echo mysqli_error($conn)``` : 연결 실패시 에러 메시지 보여줌
+- mysqli_connect_errno() : db 접속 관련 에러 출력
+- 쿼리문 안에 변수값을 사용하려면 {}를 넣어줘야한다.
+- ``` $sql = "
+  INSERT INTO TOPIC
+  (title, description, created)
+  values('{$_POST['title']}', '{$_POST['description']}', NOW())
+  ";
+- 
