@@ -58,4 +58,10 @@
   - EX ) ARP
 - 멀티캐스트(Multicast) : 보내고자 하는 그룹 멤버들에게만 한 번에 보낼 수 있다.
   - 라우터나 스위치에서 이 기능을 지원하는 경우에만 사용 가능
-- 
+- OSI 7 Layer (Open Systems Interconnection 7 Layer)
+  - Application Layer, Presentation Layer, Session Layer, Transport Layer, Network Layer, Data Link Layer, Physical Layer
+  - 장점
+    - 데이터의 흐름이 한눈에 보인다.
+    - 문제를 해결하기 편리하다.
+    - 표준화를 하니까 여러 회사 장비를 써도 네트워크가 이상 없이 돌아간다.
+      - Physical Layer
