@@ -94,4 +94,3 @@ var_dump(isset($a, $b)); //FALSE
   (title, description, created)
   values('{$_POST['title']}', '{$_POST['description']}', NOW())
   ";
-- 
